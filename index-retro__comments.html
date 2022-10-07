@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRINCE FAN PAGE</title>
+    <link rel="stylesheet" href="style-retro.css" />
+  </head>
+  <body>
+    <!-- HEADER, NAV, SIDES START -->
+    <header class="site-header">
+      <div class="site-header__container">
+        <div class="site-header__menu-toggle" id="site-header__menuButton">
+          <img src="magnifying-glass-nobgd.png" alt="" />
+        </div>
+
+        <h1 class="site-header__logo">PRINCE FAN PAGE</h1>
+        <nav
+          class="site-header__controls-toggle"
+          id="site-header__controlsButton"
+        >
+          <img src="cogwheel.png" alt="" />
+        </nav>
+      </div>
+    </header>
+    <aside class="aside-menu" id="aside-menu">
+      <nav>
+        <ul class="aside-menu__list">
+          <li>
+            <a
+              href="index-retro__landing.html"
+              style="color: var(--aside-text-color)"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="index-retro__store.html"
+              style="color: var(--aside-text-color)"
+              >COOL STUFF</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="index-retro__comments.html"
+              style="color: var(--aside-text-color)"
+              >LOVE LETTERS</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <aside class="aside-controls" id="aside-controls">
+      <div>
+        <ul class="aide-controls__list">
+          <li><input type="checkbox" class="audioToggle" />ENABLE AUDIO</li>
+          <li>
+            <input type="checkbox" class="flashToggle" id="flashToggle" />ENABLE
+            FLASH
+          </li>
+          <li>
+            <input type="checkbox" class="chaosToggle" id="chaosToggle" />ENABLE
+            CHAOS
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              class="animationToggle"
+              id="animationToggle"
+            />ENABLE ANIMATION
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- HEADER, NAV, SIDES END -->
+
+    <div class="popup" id="popupError">
+      <h2 class="popup-header">NOTIFICATION</h2>
+      <h3>Jonathan Ödquist ca 1999</h3>
+      <div>
+        <img src="jag.jfif" alt="" />
+        <p>P.S Looking for internship</p>
+      </div>
+    </div>
+    <main class="main-content-comments">
+      <h2 class="section-header">COMMENT SECTION</h2>
+      <div class="container">
+        <label for="comment" name="comment" class="add-comment"
+          >ADD YOUR COMMENT BELOW</label
+        >
+        <textarea id="comment"></textarea>
+        <button class="addComments" id="addComments">Add</button>
+        <div id="allComments"></div>
+        <div class="prince-gif"><img src="prince-dance.gif" alt="" /></div>
+      </div>
+    </main>
+
+    <script src="script__nav.js"></script>
+    <script src="script-retro__comment-section.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+/* STORE POPUP FUNCTION 
+
+function popupAdd(index) {
+   
+
+    const popupWindow = document.getElementById('merch-item-popup')[index];
+    if (popupWindow != null) {
+        
+        popupWindow[index].classList.add('merch-item-popup--active')
+    }
+    
+};
+
+
+//  Get all items with specific id
+// Check if itemIcons != null
+// for each item with id from querySelectorAll
+// add click event for each item
+
+const itemIcons = document.querySelectorAll('#main-content-store__merch-item-icon');
+if (itemIcons != null) {
+itemIcons.forEach((item, index) => {
+    
+    item.addEventListener('onclick', popupAdd(index))
+})};
+
+
+
+function popupRemove(index) {
+    const popupWindow = document.querySelectorAll('#merch-item-popup');
+    popupWindow[index].classList.remove('merch-item-popup--active');
+}
+
+const popupClose = document.querySelectorAll('#popup-close');
+if (popupClose != null){
+    popupClose.forEach((item, index) => {
+    item.addEventListener('click', popupRemove(index), false)
+})};
+
+*/
+
+
+
